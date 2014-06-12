@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background-color:#f3f5f0;
+}
+/*::::::::::ETILOS PARA EL INDEX ::::::::::::::::::::::::::::::*/
+.fondoindex{
+background-image:url(../imagenes/acceso.png);
+background-repeat:no-repeat;
+width:343px;
+height:206px;
+margin-top:125px;
+}
+.tablaindex{
+width:343px;
+height:206px;
+}
+.txt_fuente{
+font:bold 12px Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#2f627e;
+}
+.txt_cuadro{
+border: 1px solid #919A7C;
+width:120px;
+height:17px;
+color:#336699;
+font:12px Verdana, Arial, Helvetica, sans-serif;
+}
+.btn_enviar {
+border: 1px dotted #AABF76;
+background: #F9FDF0;
+color: #777971;	
+font-weight :bold;
+width:80px;
+font-size :11px;
+padding: 4px;
+}

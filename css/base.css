@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	padding:0;
+	margin:0;
+	background:#FC6;
+	}
+
+h1,h2,h3,h4,h5,h6{margin:0;}
+p{margin:5px 0 0 0}
+
+
+/* ***************** CAPAS DE MAQUETACION ********************* */
+#contenedor{
+	width:990px;
+	margin:auto;
+	background:#fff;
+	
+	box-shadow: 0 0 20px #000;
+	-webkit-box-shadow: 0 0 20px #000;
+	-moz-box-shadow: 0 0 20px #000;
+	}
+
+	#capacabecera{
+		width:990px; height:180px;
+		background:url(../pics/bgcabecera.jpg) no-repeat top center;
+		}		
+		#logo{float:left; width:130px; height:160px; margin:12px 0 0 10px;}
+		#capaidioma{
+			float:right;
+			width:580px; height:40px;
+			color:#FFE599;
+			}
+			#redes{float:left; width:350px;}
+			#redes p{float:left; margin-top:12px;}
+			#idioma{float:left; width:200px; margin-left:20px;}
+			#idioma p{float:left; margin-top:12px;}	
+			#idioma span{float:left; margin-top:10px;}	
+			
+		#slogan{float:left; width:400px; margin:30px 0 0 20px; color:#FF0; text-shadow: 0px 1px 3px #000; font-family: 'Libre Baskerville', serif;}
+		#comuniquese{float:right; width:260px; padding:10px; margin:30px 10px 0 0; border-radius:10px; color:#fff; text-shadow: 1px 1px 2px #000; background:rgba(255,255,255,0.3);}
+	
+	#capamenusuperior{
+		/*width:988px;*/ height:40px; padding-left:2px;
+		background:url(../pics/bgmenu.jpg) repeat-x;
+		}
+		#capamenusuperior ul{margin:0; padding:0; list-style:none;}
+		#capamenusuperior ul li a{
+			float:left; display:block; 
+			margin:3px 1px 0 1px; padding:8px 16px; 
+			text-decoration:none; text-align:center;
+			color:#fff; font-size:15px;
+			border-radius:5px;
+			text-shadow: 2px 2px 3px #000;
+			font-family:Arial, sans-serif;
+			
+			/* Aqui colocamos la transicion para cada navegador */
+			  -webkit-transition:all 0.5s ease-out;  /* Chrome y Safari */
+			  -o-transition:all 0.5s ease-out;  /* Opera */
+			  -moz-transition:all 0.5s ease-out;  /* Mozilla Firefox */
+			  -ms-transition:all 0.5s ease-out;   /* Internet Explorer */
+			  transition:all 0.5s ease-out;  /* W3C */				
+			}
+		#capamenusuperior ul li a:hover{
+			color:#FFFF00; 
+			background:#E63900;
+			text-shadow: 2px 2px 3px #000; 
+			}
+	
+	#capabanner{
+		width:970px; height:400px;
+		margin:10px 10px 0 10px;
+		}
+	
+	section{padding:10px; height:auto;}
+		#capaizquierdo{float:left; width:240px; height:auto;}
+			.pugins240px{width:240px; margin-bottom:10px;}
+			.capahabitacion{
+				background:#E63900; 
+				padding:5px 10px; 
+				border-radius:10px; 
+				margin-bottom:10px; 
+				color:#fff; 	
+				
+				box-shadow: 0 2px 8px #000;
+				-webkit-box-shadow: 0 2px 8px #000;
+				-moz-box-shadow: 0 2px 8px #000;
+				}
+			.capahabitacion h3{color:#fff; text-align:center; text-shadow:0px 1px 2px #000;}
+				.capahabitacion .imghabitacion img{display:block; border:5px #fff solid;}
+				.capahabitacion .leermas a{display:block; margin-left:110px; width:90px; padding:3px 10px; background:#661A00; color:#fff; border-radius:20px; color:#fff; text-decoration:none;}
+				.capahabitacion .leermas a:hover{background:#FFC; color:#F00;}
+				
+		#capamedio{float:left; width:490px; padding:0 10px; height:auto; margin:0 10px; text-align:justify; color:#633;}
+			#capamedio p{margin:10px;}
+			#capamedio h2{color:#F60;}
+			#shared{border-top:1px #F60 dotted; margin-bottom:10px; padding:5px 0 0 380px; text-align:right;}
+			#capamedio .verroom a{display:block; width:90px; margin-left:70%; padding:3px 10px; background:#661A00; color:#fff; border-radius:20px; color:#fff; text-decoration:none;}
+			#capamedio .verroom a:hover{background:#FFC; color:#F00;}
+			
+			
+		#capaderecho{float:left; width:200px; height:auto;}
+			.pugins200px{width:200px; margin-bottom:5px;}
+		
+	footer{width:990px; height:auto; background:#661A00; color:#fff;}
+		#capainfo{width:980px; height:auto; padding:10px 0 10px 10px;}
+			#capainfo .info{ float:left; width:316px; height:auto; margin-right:10px;}
+				#capainfo .info .tituloinfo{ float:left; width:80px; margin-right:5px;}
+				#capainfo .info .datoinfo{float:left; width:228px; margin-bottom:5px;}
+				#capainfo .info form input,textarea{padding:2px; width:200px; background:#F60; border:2px #fff solid; color:#fff; font-family:Helvetica, Arial, sans-serif;}
+				#capainfo .info .boton{padding:10px; width:208px; background:#E63900; border:none; border-radius:5px; cursor:pointer;}
+				#capainfo .info .boton:hover{background:#000;}
+		#capacopyright{ width:970px; padding:10px; background:#400000;}
+			#cliente{float:left;}
+			#autor{float:right; font-size:11px; color:#999;}
+				#autor a{color:#F90; text-decoration:none;}
+				#autor a:hover{color:#fff; text-decoration:underline;}

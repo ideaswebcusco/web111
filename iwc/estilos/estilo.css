@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+body{
+	text-align:center; /*para lograr el centrado con IE6*/
+	font:90% Verdana,Tahoma,Arial,sans-serif;
+	background:url(../pics/fondo.jpg) repeat-x #f1f7fc;
+	margin:0;
+	padding:0;
+	}
+	
+/*Estilo de los links*/
+a{ text-decoration:none;}
+
+/*Estilo de las etiquetas de titulos H*/
+h1{ font-size:26px;}
+h2{ font-size:20px;}
+h3{ font-size:16px;}
+h4{ font-size:14px;}
+h5{ font-size:12px;}
+h6{ font-size:10px;}
+
+button a img{ border:0;}
+	
+/*CAPAS **************************************************** */
+/* --------------------------------------------------------- */
+#pagina{
+	border-left: solid 1px #666666;
+	border-right: solid 1px #666666;
+	width:960px;
+	margin:auto;
+	text-align:left;
+	padding:0 0 0 0;}
+
+#cabecera{
+	float:left;
+	background-color:#0076C2;
+	width:960px;
+	height:14px;
+	padding:4px 0 4px 0;
+	}
+	
+	#fecha{
+ 		float:left;
+		width:500px;
+		text-align:left;
+ 		padding: 0px 5px 0px 5px;
+ 		font-family: Verdana;
+		font-size: 9px;
+		color:#fff;
+		}
+		#fecha a:hover{ text-decoration:underline;}
+	#icono{
+ 		float:right;
+		width:300px;
+		text-align:right;
+ 		padding: 0px 20px 0px 5px;
+ 		font-family: Verdana;
+		font-size: 9px;
+		color:#fff;
+		border:0;
+		}
+		#icono img{ border:0;}
+
+ 
+#banner{
+	float:left;
+	/*background: url(../pics/banner.png);*/
+	background: transparenci;
+	width:960px;
+	height:250px;
+	}
+
+
+/*Creacion del menu*/
+#menu {  /*div menu*/
+	text-align: center;
+	width: 960px;
+	background: tranparent;
+}
+
+#menu ul { list-style-type: none; margin:0px; padding:0px;}
+
+#menu ul li.nivel1 { 
+	float: left;
+	width: 160px; /*ancho de los menus nivel1*/
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 11px;
+	font-family:Verdana, Geneva, sans-serif;
+	/*font-weight:bold;*/
+	background: #0076C2;
+	padding: 10px 5px 10px 5px; /*margen interno de los menus (este se suma con el tamaño de fuente para lograr el alto del menu)*/
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: relative;
+}
+
+#menu ul li:hover {position: relative;}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 { /*Color fondo y fuente de los menus en accion hover*/
+	background: transparent;
+	color:#060; /*Color de Fuente de los Menus*/
+	text-decoration:underline;
+	position: relative;
+}
+
+#url{
+	float:left;
+	width:950px;
+	padding:10px 5px 10px 5px;
+	}
+
+	#navegador{
+ 		float:left;
+		width:300px;
+		text-align:left;
+		color:#0076C2;
+		font-size:10px;
+		font-weight:bold;
+ 		}
+	#bandera{
+ 		float:left;
+		width:180px;
+ 		text-align:right;
+ 		padding: 0px 5px 0px 5px;
+		font-family: Verdana;
+		font-size: 9px;
+		color:#000;
+ 		}
+		#bandera img{ border:0;}
+	
+	#buscador{
+ 		float:right;
+		width:450px;
+		text-align:right;
+ 		}
+	#buscador .cuadrotexto{
+		background-image:url(../pics/buscar.gif);
+		background-repeat:repeat-x;
+		border-style:solid;
+		border-color:#0066FF;
+		border-width:1px;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		color:#333;	
+		}
+	#buscador .boton{
+		background-color:#C4D7CF;
+		color:#036;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		font-weight: bold;
+		border: 1px #999 solid;
+		background-image:url(../pics/buscar.gif);
+		background-repeat:repeat-x;
+		}
+ 
+#contenido{
+	float:left;
+	background:url(../pics/contenido_fd.png) repeat-x #fff;
+	width:960px;
+	/*height:900px;*/
+	}
+	
+	#oferta{
+		float:left;
+		width:960px;
+		}
+		
+	.contenido_oferta{
+		float:left;
+		background:url(../pics/oferta_fd.jpg);
+		width:210px;
+		height:244px;
+		margin: 5px 5px 5px 5px;
+		padding:0px 10px 0px 10px;
+		color:#000;
+		font-size:9px;
+		}
+		.contenido_oferta img{border:0;}
+		.contenido_oferta a{color:#400000;}
+		.contenido_oferta a:hover{color:#030;}
+	
+	#editable{
+		float:left;
+		width:960px;
+		}
+		#menulateral{
+			float:left;
+			background-color:#FFF;
+			width: 207px;
+			margin: 5px 5px 5px 5px;
+			}
+		#menulateral ul, li {
+			list-style-type: none;}
+		#menulateral ul {
+			/*margin: 0 0 0 0;*/
+			/*padding: 5px 5px 5px 5px;*/
+			margin:0px;
+			padding:0px;}
+		#menulateral a {
+			display: block;
+			background:url(../pics/menulateral_link.png);
+			font: 9px Verdana, Geneva, sans-serif;
+			text-decoration: none;
+			color: #fff;
+			font-weight:bold;
+			padding: 8px 6px 12px 35px;
+			}
+		#menulateral a:hover {
+			background:url(../pics/menulateral_hover.png);
+			font: 9px Verdana, Geneva, sans-serif;
+			text-decoration: none;
+			color: #fff;
+			font-weight:bold;
+			}
+			
+		#navegacion{
+			float:left;
+			width:615px;
+			height:20px;
+			padding: 10px 60px 5px 60px;
+			/*border:dashed 1px #003366;*/
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:11px;
+			text-align:center;
+			color:red;
+			font-weight:bold;
+			border-top: dotted 1px #930;
+			border-bottom:dotted 1px #930;
+			}
+			#navegacion a{
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:14px;
+				font-weight:bold;
+				color:#06C;
+				text-decoration:none;
+				}
+			#navegacion a:hover{
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:14px;
+				font-weight:bold;
+				color:red;
+				text-decoration:underline;
+				}
+			
+		#texto{
+			float:left;
+			width:615px;
+			padding: 28px 60px 40px 60px;
+			/*border:dashed 1px #003366;*/
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:11px;
+			color:#400000;
+			background-image: url(../pics/pergaminos1.jpg);
+			background-repeat: no-repeat;
+			}
+			#texto a{
+				text-decoration:underline;
+				color:#400000;
+				}
+			#texto a:hover{
+				text-decoration:underline;
+				color:#FFC;
+				}
+				
+			#texto .vermas a{
+				font-family:Arial, Helvetica, sans-serif;
+				color:#B70000;
+				font-weight:bold;
+				text-decoration:none;
+				}
+			#texto .vermas a:hover{
+				font-family:Arial, Helvetica, sans-serif;
+				color:#960;
+				font-weight:bold;
+				text-decoration:none;
+				}
+				
+
+#itexto1 {
+	float:left;
+	margin:5px 5px 5px 0px;
+	background-image: url(../pics/pergaminos2.jpg);
+	background-position: 0px 157px;
+}
+#itexto2 {
+	float:left;
+	background-image: url(../pics/pergamino1_04.jpg);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+#pie{
+	background: #0076C2;
+	width:940px;
+	font-family: Verdana;
+	font-size: 9px;
+	text-align: center;
+	color:#fff;
+	padding: 10px 10px 10px 10px;
+	clear:left;
+}
+	#pie a{color:#fff;}
+	#pie a:hover{color:red;}
+#paginacion {
+	font-size:12px;	
+}
+#paginacion a {
+	float: left;
+	text-decoration: none;
+	background-color: #E8D0A8;
+	display: block;
+	text-align: center;
+	height: 18px;
+	border-color: #967F5F;
+	border-width: 1px;
+	border-style: solid;
+	margin-right: 5px;
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#paginacion a:hover {
+	background-color:#FFF;
+	color:#C00;
+}
+#paginacion span {
+	float: left;
+	background-color: white;
+	display: block;
+	text-align: center;
+	height: 18px;
+	border-color:#900;
+	border-width: 1px;
+	border-style: solid;
+	margin-right: 5px;
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	color:#900;
+}
